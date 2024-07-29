@@ -20,8 +20,8 @@ export const getConnection = async() => {
   try {
     const pool = await sql.connect(config);
 
-    const result = await pool.request().query("SELECT GETDATE()");
-    console.log(result);
+    // const result = await pool.request().query("SELECT GETDATE()");
+    // console.log(result);
 
     return pool;
   } catch(error) {
